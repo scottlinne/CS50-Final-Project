@@ -11,7 +11,7 @@
 
 
 
-// function to get the id of the button that is clicked
+// function to get the id of the button that is clicked and performs the if else statements
 function getButton(clicked_id)
 {
 var button = clicked_id;
@@ -82,17 +82,26 @@ var button = clicked_id;
 		document.getElementById("pressure2").innerHTML +='<button>Yes</button><button>No</button>';
 	
 	}
+	
+	// ask if fluid contains particulate matter
+	// tests if flow rate was greater than 20 GPM for right column
+	// creates two buttons yes and no to capture the answer	
 	else if(button === "greater20greater30")
 	{
 		document.getElementById("pressure3").innerHTML = "<p>Does your fluid contain particulate matter?";
-		document.getElementById("pressure3").innerHTML += '<button id="yes" onclick="">Yes</button><button>No</button>';
+		document.getElementById("pressure3").innerHTML += '<button id="yes" onclick="getButton(this.id)">Yes</button><button id="no" onclick="getButton(this.id)">No</button>';
 	}
+	
+	
+	// ask if they need a drum or carboy question
+	// create buttons for yes and no	
 	else if(button === "greater20less30")
 	{
 		document.getElementById("pressure3").innerHTML = "<p>Do you need to use your pump in a drum or carboy?";
 		document.getElementById("pressure3").innerHTML += '<button id="yes" onclick="">Yes</button><button>No</button>';
 		
 	}
+	
 	
 	
 	else if(button === "particulateYes")
@@ -146,49 +155,28 @@ function pulselessYes()
 }
 
   
-
-function ifs()
-{
-
-	// ask what is your pressure
+	// currently not used
+	function ifs()
+	{
 	
-		// if (pressure <30 && particulate matter === Yes && pulseless flow === Yes)
-		// you need a progressing cavity pump
-		{
-			
-		}
-
-	// else if(pressure > 30 && particulate matter === yes)
-		// you need a Peristaltic tubing, prgressing cavity  or bellows pumps
-		{
-			
-		}
-
+		// ask what is your pressure
 		
-	// else if(
-
-
-
+			// if (pressure <30 && particulate matter === Yes && pulseless flow === Yes)
+			// you need a progressing cavity pump
+			{
+				
+			}
 	
+		// else if(pressure > 30 && particulate matter === yes)
+			// you need a Peristaltic tubing, prgressing cavity  or bellows pumps
+			{
+				
+			}
 	
-	// if pressure less than 30 psi
-		// ask Does your fluid contain particulate matter?
-		// offer two buttons --- yes or No
-		
-		// if yes Ask do you require a pulseless flow?
-			// present two buttons --- yes or no
-			// if yes present a solution			
 			
-		
-		
-		// if no ask Do you require a self priming pump
-			// offer two buttons --- yes or no
-			
-			// if yes ask Do you require high accuracy dispensing
-			
-			// if no present solution Peristaltic tubing or piston
-			
-}
+	
+				
+	}
 
 
 
