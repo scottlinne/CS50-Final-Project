@@ -1,0 +1,10 @@
+
+
+
+
+function flowrate() 
+	{
+    	document.getElementById("pressure1").innerHTML = "What is your pressure?";
+    
+		
+	}

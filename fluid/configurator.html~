@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+
+<title>Page title</title>
+<body>
+
+
+
+<div id="configurator">
+
+
+<script type="text/javascript" >
+
+
+
+
+
+
+
+// store a variable for the flowrate
+var flowrate;
+var pressure;
+flowrate = window.prompt("How many liters per minute LPM will you pump?");
+
+
+// if flowrate is less than 1 LPM go this route
+if(flowrate < 1)
+{
+document.write("Your flowrate is " + flowrate);
+
+pressure = window.prompt("what is your pressure psi");
+document.write(<br>);
+document.write("Youre pressure psi is " + pressure);
+
+
+}
+
+
+// if flowrate is between 1 and 20 LPM do this process
+if(flowrate >= 1 && flowrate < 20)
+{
+
+alert("your flow rate is between 1 and 20");
+
+
+}
+
+
+s// if flowrate is greater than or equal to 20 LPM do this process
+if(flowrate >= 20)
+{
+
+alert("Your flowrate is 20 or greater");
+
+
+}
+
+
+
+</script>
+
+
+</div>
+
+
+</body>
+
+
+</html>

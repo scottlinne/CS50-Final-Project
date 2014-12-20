@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+<script src="js/configurator.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+
+</head>
+
+<title>Liquid Pump Configurator</title>
+
+<div id="wrap">
+
+
+<body>
+
+<div id="configurator">
+
+<button id="clear" onclick="clearall()"><h2>Reset Button</h2></button>
+
+<h1>What flow rate do you require?</h1>
+
+
+<div class="clearfix"></div>
+<div id="lessthan">
+
+<button id = "less1" onclick="getButton(this.id)">Less than 1 GPM<br>Click Here</button>
+<p id="pressure1"></p>
+
+</div>
+
+
+
+<div id="middle">
+<button id = "1to20" onclick="getButton(this.id)">1 to 20 GPM<br>Click Here</button>
+<p id="pressure2"></p>
+<p id="pressure2.1"></p>
+<p id="pressure2.2"></p>
+<p id="pressure2.3"></p>
+<p id="pressure2.4"></p>
+</div>
+
+
+
+<div id="greaterthan" >
+<button id = "greater20" onclick="getButton(this.id)">Greater than 20 GPM<br>Click Here</button>
+<p id="pressure3" ></p>
+
+</div>
+
+<div class="clearfix"></div>
+<div id="questions"></div>
+<div id="selectors"></div>
+</div>
+
+
+
+
+</body>
+
+<div class="clearfix"></div>
+</div>
+
+</html>
